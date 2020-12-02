@@ -24,11 +24,8 @@ def find_nums_that_add_up(numbers, add_up_to_num, count_numbers):
         i += 1
 
     if add_up_to_num in previous_dictionary:
-        list_numbers = []
         indices = previous_dictionary[add_up_to_num]
-        for i in indices:
-            list_numbers.append(numbers[i])
-        return list_numbers
+        return [numbers[i] for i in indices]
     return []
 
 
