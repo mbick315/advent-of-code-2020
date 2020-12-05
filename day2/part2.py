@@ -2,7 +2,7 @@ def is_valid_password(password, rule_character, first_position, second_position)
     matches_first_position = len(password) >= first_position and password[first_position] == rule_character
     matches_second_position = len(password) >= second_position and password[second_position] == rule_character
     return (matches_first_position and not matches_second_position) \
-           or (not matches_first_position and matches_second_position)
+        or (not matches_first_position and matches_second_position)
 
 
 num_valid_passwords = 0
