@@ -28,3 +28,6 @@ def find_trees(x_forward, y_forward):
 
 num_trees = find_trees(3, 1)
 print('Num Trees: {}'.format(num_trees))
+
+multiply_trees = find_trees(1, 1) * find_trees(3, 1) * find_trees(5, 1) * find_trees(7, 1) * find_trees(1, 2)
+print('Multiply all slopes {}'.format(multiply_trees))
